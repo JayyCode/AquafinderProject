@@ -1,14 +1,15 @@
 import datetime
 
 
-
 date = datetime.datetime.today()
 print(date)
+
+
 class trie:
 
     def __init__(self):
 
-        self.root = {'*' : '*'}
+        self.root = {"*": "*"}
         fish_list = [
             "CLOWN",
             "ANGELFISH",
@@ -94,7 +95,7 @@ class trie:
             "OTHER FRESHWATER VERTABERATE",
             "APOSTIGRAMMING",
             "PLANT",
-            "OTHER FRESHWATER INVERTEBRATE"
+            "OTHER FRESHWATER INVERTEBRATE",
         ]
 
         for word in fish_list:
@@ -106,7 +107,7 @@ class trie:
             if char not in current_node:
                 current_node[char] = {}
             current_node = current_node[char]
-        current_node['*'] = '*'  # Mark end of the word
+        current_node["*"] = "*"  # Mark end of the word
 
     def is_word(self, word):
         current_node = self.root
@@ -114,15 +115,13 @@ class trie:
             if char not in current_node:
                 return False
             current_node = current_node[char]
-        return '*' in current_node
-
-
+        return "*" in current_node
 
 
 def tag_prep(products):
     handler = trie()
     listem = []
-    holder = ''
+    holder = ""
     print(handler.root)
 
     for product in products:
@@ -139,23 +138,23 @@ def tag_prep(products):
             if state:
                 holder = words
             else:
-                holder = 'NULL'
+                holder = "NULL"
 
         listem.append(holder)
-        holder = ''
+        holder = ""
 
     print(listem)
     return listem
 
 
-
-
-
-
-products = ['A48 WYSIWYG Premium Male Betta','big ass baller brown kush doggy', 'small ole fish', 'big ole bear', 'small ole bear',]
+products = [
+    "A48 WYSIWYG Premium Male Betta",
+    "big ass baller brown kush doggy",
+    "small ole fish",
+    "big ole bear",
+    "small ole bear",
+]
 tag_prep(products)
 
-bop={'bop' :'bap',
-     'mop' : 'lap',
-     'slop' : 'cap'}
+bop = {"bop": "bap", "mop": "lap", "slop": "cap"}
 print(bop)
