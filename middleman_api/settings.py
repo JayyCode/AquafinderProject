@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'middleman_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
+        'ENGINE': 'mssql',
         'NAME': 'aquafinder',
         'USER': 'aquaticshit101',
         'PASSWORD': '5plish5plashnigga!',
         'HOST': 'aquafinder.database.windows.net',
-        'PORT': '1433',
+        'PORT': '',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
