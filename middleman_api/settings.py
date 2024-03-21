@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'aquaticshit101',
         'PASSWORD': '5plish5plashnigga!',
         'HOST': 'aquafinder.database.windows.net',
-        'PORT': '',
+        'PORT': '`',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },

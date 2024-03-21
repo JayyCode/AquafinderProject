@@ -19,7 +19,9 @@ from django.urls import path, include # dependency for linking  api controller t
 from django.http import HttpResponse
 
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('fishfinder/', include('fishfinder.urls'))
+    path('djangoadmin/', admin.site.urls),
+    path('api/', include('fishfinder.urls'))
+
 ]
