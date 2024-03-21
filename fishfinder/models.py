@@ -1,7 +1,72 @@
 from django.db import models
 
 # Create your models here.
-# class users(models.Model):
+class Users(models.Model):
+    USER_ID = models.AutoField(primary_key=True)
+    class Meta:
+        db_table = 'aquafinder.users'
+
+
+class Transactions (models.Model):
+
+    CUSTOMER_ID = models.ForeignKey(Users, on_delete=models.CASCADE, to_field = 'USER_ID')
+
+    class Meta:
+        db_table = 'aquafinder.transations'
+        
+
+# class Sellers:
+#     pass
+
+# class Reviews:
+#     pass
+# class Productfeed:
+#     pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#class users(models.Model):
 #     user_id = models.AutoField(primary_key= True)
 #     user_name = models.CharField(max_length = 50)
 #     email = models.CharField(max_length = 100)  

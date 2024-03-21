@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'fishfinder.apps'
+    'fishfinder'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'aquaticshit101',
         'PASSWORD': '5plish5plashnigga!',
         'HOST': 'aquafinder.database.windows.net',
-        'PORT': '`',
+        'PORT': '',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
