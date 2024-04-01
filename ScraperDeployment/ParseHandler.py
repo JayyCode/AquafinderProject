@@ -77,6 +77,7 @@ class DBT:
     def data_query(self, temp_data, seller: str, links):
         self.links = links
         self.seller = seller
+        seller_list = []
         prices = []
         product = []
         description = []
@@ -101,8 +102,9 @@ class DBT:
         )
 
         for element in temp_data:
+            seller_list.append(seller)
             soup = BeautifulSoup(element, "lxml")
-            title_tag = soup.title
+            # title_tag = soup.title
             price_result = soup.find(class_="{}".format(price_query))
             title_result = soup.find(class_="{}".format(title_query))
 
@@ -124,10 +126,14 @@ class DBT:
                 product.append(title_result.text)
             else:
                 product.append("NULL")
+            try:
+                print(title_result.text)
+                print(price_result.text)
+                print(desc_text)
+            except AttributeError as e:
+                print(title_result)
+                print (price_result)
 
-            print(title_result.text)
-            print(price_result.text)
-            print(desc_text)
 
         dbh = DatabaseHandler(seller, product, prices, description, links)
 
