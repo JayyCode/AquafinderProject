@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'middleman_api.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'aquafinder',
         'USER': 'root',
@@ -87,6 +88,11 @@ DATABASES = {
             
         },
     },
+=======
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+>>>>>>> parent of 8b39d9a (beginning of model creation)
 }
 
 

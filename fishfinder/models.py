@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+<<<<<<< HEAD
 class Users(models.Model):
     USER_ID = models.AutoField(primary_key=True)
     class Meta:
@@ -128,3 +129,5 @@ class Transactions (models.Model):
 #     auto_renewal =
 #     support_requests =
 
+=======
+>>>>>>> parent of 8b39d9a (beginning of model creation)
