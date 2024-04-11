@@ -12,7 +12,7 @@ class Transactions (models.Model):
     CUSTOMER_ID = models.ForeignKey(Users, on_delete=models.CASCADE, to_field = 'USER_ID')
 
     class Meta:
-        db_table = 'aquafinder.transactions'
+        db_table = 'aquafinder.transations'
         
 
 # class Sellers:
