@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'middleman_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'aquafinder',
-        'USER': 'aquaticshit101',
-        'PASSWORD': '5plish5plashnigga!',
-        'HOST': 'aquafinder.database.windows.net',
-        'PORT': '',
+        'USER': 'root',
+        'PASSWORD': 'rw1010419',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
+            
         },
     },
 }

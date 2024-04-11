@@ -1,6 +1,0 @@
-MIGRATIONS
-    -If theres a problem with migrating the files from one of the appplications, make changes in the migrations folder directly. cureent state changes uses previous migration states as dependencies.
-
-
-DATABASES
-    -Configurations for th db slip if the parameters arent defined correctly. refrain from using a port number. it is assumed automatically
