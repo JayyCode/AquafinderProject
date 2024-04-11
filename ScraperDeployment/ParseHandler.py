@@ -3,7 +3,7 @@ from lxml import etree, html
 import json
 import sqlite3
 import os
-from DBH import *
+from ScraperDeployment.DBH import *
 
 
 class DBT:
