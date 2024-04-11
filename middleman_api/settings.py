@@ -77,22 +77,16 @@ WSGI_APPLICATION = 'middleman_api.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'aquafinder',
-        'USER': 'root',
-        'PASSWORD': 'rw1010419',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'USER': 'aquaticshit101',
+        'PASSWORD': '5plish5plashnigga!',
+        'HOST': 'aquafinder.database.windows.net',
+        'PORT': '1433',
         'OPTIONS': {
-            
+            'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
-=======
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
->>>>>>> parent of 8b39d9a (beginning of model creation)
 }
 
 
